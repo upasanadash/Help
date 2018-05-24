@@ -1,5 +1,5 @@
 <?php
 
-echo "welcom";
+echo "python";
 
 ?>

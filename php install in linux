@@ -1,0 +1,27 @@
+*********first install Apache*********
+
+sudo apt-get update
+sudo apt-get install apache2
+sudo apache2ctl configtest
+sudo nano /etc/apache2/apache2.conf
+ServerName 127.0.0.1
+sudo apache2ctl configtest
+sudo systemctl restart apache2
+
+sudo chmod 777 /var/www/html    //to give permission
+
+
+*******install sql*********
+
+sudo apt-get install mysql-server
+sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
+sudo nano /etc/apache2/mods-enabled/dir.conf
+sudo apache2ctl restart
+
+**********install phpmyadmin*********
+
+sudo apt-get install phpmyadmin
+sudo systemctl restart apache2
+sudo nano /etc/apache2/apache2.conf
+include /etc/phpmyadmin/apache.conf
+sudo apache2ctl restart
