@@ -1,0 +1,27 @@
+Some SQL Commands 
+
+1. Open the database
+
+    mysql -u root -p
+
+2. See Database
+
+    show databases;
+
+3. Create database
+
+    create database databaseName
+
+4.  Import database
+
+    use <existing database name>
+    source <existing file which you want to import>
+
+5.  See All tables
+
+    show tables;
+
+6.  See a specific table
+
+    describe tablename;
+
