@@ -1,7 +1,37 @@
 **********Virtual Host Set up in linux**********
 
-/var/www/html $ sudo mkdir test
+1. Create a folder in html folder
+2. Create an index.php file in that folder
+3. In etc -> apache2 -> sites-available -> 000-default.conf file 
+    
+
+    For virtual.......
+
+    <VirtualHost *:80>     
+	    DocumentRoot "/var/www/html/newstudio"     
+	    ServerName devstudio.upasana.com   
+	<Directory "/var/www/html/newstudio">     
+		AllowOverride All     
+		Order allow,deny     
+		Allow from all   
+	</Directory> 
+    </VirtualHost>
 
 
+    For local.......
 
+    <VirtualHost *:80>     
+	    DocumentRoot "/var/www/html/newstudio"     
+	    ServerName demo.upasana.com   
+	<Directory "/var/www/html/newstudio">     
+		AllowOverride All     
+		Order allow,deny     
+		Allow from all   
+	</Directory> 
+    </VirtualHost> 
+ 
 
+4. and in etc -> hosts 
+
+    127.0.0.1	devstudio.upasana.com
+    127.0.0.1 	demo.upasana.com
