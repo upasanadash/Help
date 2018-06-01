@@ -1,0 +1,114 @@
+		****** Django install in linux ********
+
+1. Before starting of any approach start login
+
+    	$ sudo -s
+
+2. Before install django in your local machine we must have python version
+   2.7 and newer version of python because django never support python version 2.6 and old version.
+   So must check the python version first 
+
+   	 # python --version
+
+3. For Virtual environment we need to install first using command
+
+	# aptitude install python virtualenv virtualenvwrapper
+
+4. Create a new directry to store our django project 
+
+	mkdir django
+
+5. Check we must in our home directry..... To check we write command
+
+	pwd
+
+6. cd django
+
+7. Need to create a vitual environment in this directory django
+
+	/django# virtualenv myproject
+
+8. Check type 
+			
+	#ls
+
+9. now change the directory 
+
+	cd myproject/bin
+
+		*************** The Virtual Environment is created ******************
+
+10. To run the virtual environment type
+	*need to give the actual path to that file 
+
+	source /home/user1/django/myproject/bin/activate
+
+ 		******* Now the Virtual environment is activated ********
+	
+	We can verify it like...the prompt will be shown like this..
+
+	(muviproject) muvi-HP-ProBook-440-G2 bin #
+ 
+11. After creating virtual env install the django
+
+	pip install django
+
+		****** We can type any version name by like this ********
+
+	pip install django==version name
+
+12. After installing django we need to import it in your python
+
+	write python
+
+13. it will show python prompt
+
+14. import django
+
+15. If you want to see your django version 
+
+	Print(django.get_version())
+
+
+		************ Before entering django we need to activate virtual env **********
+
+16. For deactivate
+
+	type deactivate
+
+		************ start a new project in django ***********
+
+	/django# django-admin startproject sampleproject
+
+	now a new directory will be created under the name sampleproject under django
+
+	move to that directory sampleporojet
+
+		type ls
+
+	there are some files...
+
+		manage.py sampleproject
+
+This sampleproject directory acts as a container for our projects files. our project file will be stored in this file
+
+	
+		*********** run in web server ********
+
+	You must in directory path
+
+16. before that we need to run first 
+
+	python manage.py migrate
+
+17. django/sampleproject# python manage.py runserver 0.0.0.0:8000
+
+	default port for django
+
+18.  		*********** Now the django is started ************
+
+18. we need to type localhost ip address
+
+ 	127.0.0.1:8000
+
+				*********** Django is running ******
