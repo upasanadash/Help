@@ -1,0 +1,22 @@
+Before django we need to install the pyhton
+Install the python
+
+
+Create a virtual environment :
+virtualenv -p python3.6 folderName
+
+activate virtual env
+source bin/activate
+
+install django :
+pip install django
+
+create a project:
+django admin startproject projectName
+
+
+
+Go to the folder where  manage.py is present create an App
+python manage.py startapp appName
+
+
